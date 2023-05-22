@@ -1,0 +1,314 @@
+@font-face {
+    font-family: SuisseIntl;
+    src: url('/fonts/SuisseIntl-Medium.otf');
+  }
+
+@font-face {
+    font-family: SuisseIntlMono;
+    src: url('/fonts/SuisseIntlMono-Regular.otf');
+  }
+
+@font-face {
+    font-family: SuisseIntlMono-Bold;
+    src: url('/fonts/SuisseIntlMono-Bold.otf');
+  }
+
+  :root {
+  	--x: 0;
+  	--y: 0;
+  }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: SuisseIntl;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.body-index {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 400ms;
+}
+
+a:hover {
+  opacity: 0.2;
+  transition: all 400ms;
+}
+
+.bold {
+  font-family: SuisseIntlMono-Bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.project-title {
+  font-family: SuisseIntl;
+  font-size: 18px;
+}
+
+.info-mono {
+  font-family: SuisseIntlMono;
+  font-size: 13px;
+}
+
+.navbar {
+  width: 100vw;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 100;
+  display: flex;
+}
+
+.navbar-index {
+  width: 100vw;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+#name {
+  font-family: SuisseIntl;
+  font-size: 16px;
+}
+
+.sx {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  font-family: SuisseIntlMono;
+  font-size: 13px;
+}
+
+#about-mobile {
+  font-family: SuisseIntlMono;
+  font-size: 13px;
+  cursor: pointer;
+  display: none;
+}
+
+.half {
+  width: 50%;
+}
+
+
+.half-dx {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.dx-index {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro {
+  width: 60%;
+  font-family: SuisseIntl;
+  font-size: 16px;
+}
+
+a.about {
+  align-self: flex-end;
+}
+
+
+.section {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+}
+
+.prj-index {
+  width: 63.57%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  transition: all 400ms;
+  z-index: 100;
+}
+
+.exp-index {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  transition: all 400ms;
+  z-index: 100;
+}
+
+.section-container p {
+  font-family: SuisseIntlMono;
+  font-size: 13px;
+  padding-left: 10px;
+  padding-top: 1.5%;
+  position: absolute;
+}
+
+.section-container {
+  transition: all 400ms;
+}
+
+.prj-index:hover {
+  opacity: 0.2;
+  transition: all 400ms;
+  cursor: pointer;
+}
+
+.exp-index:hover {
+  opacity: 0.2;
+  transition: all 400ms;
+  cursor: pointer;
+}
+
+main {
+  width: 100vw;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20vw;
+}
+
+.card {
+  width: 50%;
+  padding: 0 5px 36px 5px;
+  box-sizing: border-box;
+}
+
+
+.preview {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.a-prev:hover {
+  opacity: 1;
+}
+
+.bottom {
+  display: flex;
+  margin-top: 4px;
+  gap: 24px;
+}
+
+.footer {
+  width: 100vw;
+  padding: 10px;
+  margin-top: 200px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 10px;
+}
+
+.social {
+  display: flex;
+  gap: 24px;
+}
+
+#contact {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+  main {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .navbar {
+    display: block;
+    position: relative;
+  }
+
+
+  .half-center {
+    justify-content: space-between;
+  }
+
+  .half {
+    width: 100%;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #about-mobile {
+    font-family: SuisseIntlMono;
+    font-size: 13px;
+    cursor: pointer;
+    display: block;
+  }
+
+  #about {
+    display: none;
+  }
+
+  .section {
+    position: relative;
+    top: -8px;
+  }
+
+  .footer {
+    display: block;
+  }
+
+
+  #contact {
+    flex-flow: column;
+    align-items: start;
+    justify-content: space-between;
+    padding-bottom: 0;
+  }
+
+  .social {
+    flex-flow: column;
+    gap:0;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .info-mono {
+    font-size: 14px;
+  }
+
+  .project-title {
+    font-family: SuisseIntl;
+    font-size: 20px;
+  }
+
+
+}

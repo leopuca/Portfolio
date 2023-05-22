@@ -1,0 +1,301 @@
+@font-face {
+    font-family: SuisseIntl;
+    src: url('/fonts/SuisseIntl-Medium.otf');
+  }
+
+@font-face {
+    font-family: SuisseIntlMono;
+    src: url('/fonts/SuisseIntlMono-Regular.otf');
+  }
+
+@font-face {
+    font-family: SuisseIntlMono-Bold;
+    src: url('/fonts/SuisseIntlMono-Bold.otf');
+  }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: SuisseIntl;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  z-index: 0;
+}
+
+#c {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 100;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 400ms;
+}
+
+a:hover {
+  opacity: 0.2;
+  transition: all 400ms;
+}
+
+.bold {
+  font-family: SuisseIntlMono-Bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.project-title {
+  font-family: SuisseIntl;
+  font-size: 18px;
+}
+
+.info-mono {
+  font-family: SuisseIntlMono;
+  font-size: 13px;
+}
+
+.navbar {
+  width: 100vw;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 100;
+  /* background-color: #FFF; */
+  display: flex;
+}
+
+.navbar-index {
+  width: 100vw;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+#name {
+  font-family: SuisseIntl;
+  font-size: 16px;
+}
+
+.half-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sx {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  font-family: SuisseIntlMono;
+  font-size: 13px;
+}
+
+#about-mobile {
+  font-family: SuisseIntlMono;
+  font-size: 13px;
+  cursor: pointer;
+  display: none;
+}
+
+.half {
+  width: 50%;
+}
+
+.dx-index {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro {
+  width: 60%;
+  min-width: 418px;
+  font-family: SuisseIntl;
+  font-size: 16px;
+}
+
+a.about {
+  align-self: flex-end;
+}
+
+
+.section {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+}
+
+.prj-index {
+  width: 63.57%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  transition: all 400ms;
+  z-index: 100;
+}
+
+.exp-index {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  transition: all 400ms;
+  z-index: 100;
+}
+
+.section-container p {
+  font-family: SuisseIntlMono;
+  font-size: 13px;
+  padding-left: 10px;
+  padding-top: 1.5%;
+  position: absolute;
+}
+
+.section-container {
+  transition: all 400ms;
+}
+
+.prj-index:hover {
+  opacity: 0.2;
+  transition: all 400ms;
+  cursor: pointer;
+}
+
+.exp-index:hover {
+  opacity: 0.2;
+  transition: all 400ms;
+  cursor: pointer;
+}
+
+.card {
+  width: 50%;
+  padding: 0 5px 36px 5px;
+  box-sizing: border-box;
+}
+
+
+.preview {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.bottom {
+  display: flex;
+  margin-top: 4px;
+  gap: 24px;
+}
+
+.footer {
+  width: 100vw;
+  padding: 10px;
+  margin-top: 200px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.footer-index {
+  width: 100vw;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.social {
+  display: flex;
+  gap: 24px;
+}
+
+#contact {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .navbar-index {
+    display: block;
+  }
+
+  #about-mobile {
+    font-family: SuisseIntlMono;
+    font-size: 13px;
+    cursor: pointer;
+    display: block;
+  }
+
+  #about {
+    display: none;
+  }
+
+  .dx-index {
+    width: 100%;
+  }
+
+  .intro {
+    width: 100%;
+  }
+
+  .section-container {
+    padding: 6px 0;
+  }
+
+  .section-container p {
+    padding-top: 0;
+    margin-top: -8px;
+  }
+
+  .half {
+    width: 100%;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-index {
+    display: block;
+    padding-top: 40px;
+  }
+
+  #contact {
+    flex-flow: column;
+    align-items: start;
+    justify-content: space-between;
+    padding-bottom: 0;
+  }
+
+  .social {
+    flex-flow: column;
+    gap: 0;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+
+
+}
