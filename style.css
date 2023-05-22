@@ -1,16 +1,16 @@
 @font-face {
     font-family: SuisseIntl;
-    src: url('fonts/SuisseIntl-Medium.otf');
+    src: url(fonts/SuisseIntl-Medium.otf);
   }
 
 @font-face {
     font-family: SuisseIntlMono;
-    src: url('fonts/SuisseIntlMono-Regular.otf');
+    src: url(fonts/SuisseIntlMono-Regular.otf);
   }
 
 @font-face {
     font-family: SuisseIntlMono-Bold;
-    src: url('fonts/SuisseIntlMono-Bold.otf');
+    src: url(fonts/SuisseIntlMono-Bold.otf);
   }
 
   :root {
