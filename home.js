@@ -26,9 +26,9 @@ const renderer = new THREE.WebGLRenderer({
 });
 renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
 
-window.onresize = function(){
-  location.reload();
-}
+// window.onresize = function(){
+//   location.reload();
+// }
 
 
 const scene = new THREE.Scene();
