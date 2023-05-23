@@ -136,6 +136,7 @@ main {
 .info-container-sx , .info-container-dx {
   width: 50%;
   padding: 5px;
+  box-sizing: border-box;
 }
 
 .description {
