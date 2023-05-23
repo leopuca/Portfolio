@@ -1,18 +1,18 @@
 document.getElementById("prj-index").onclick = function () {
-  location.href = '/projects.html';
+  window.location.href = '/projects.html';
 };
 
 document.getElementById("exp-index").onclick = function () {
-  location.href = '/experiments.html';
+  window.location.href = '/experiments.html';
 };
 
 // Load Three.js and GLTFLoader
 import * as CANNON from 'cannon-es'
 import * as THREE from 'three'
-import { GLTFLoader } from 'utils/GLTFLoader.js';
+import { GLTFLoader } from '/utils/GLTFLoader.js';
 
-import CannonUtils from 'utils/cannonUtils.js';
-import CannonDebugRenderer from 'utils/cannonDebugRenderer.js';
+import CannonUtils from '/utils/cannonUtils.js';
+import CannonDebugRenderer from '/utils/cannonDebugRenderer.js';
 
 
 
