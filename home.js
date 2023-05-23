@@ -1,9 +1,9 @@
 document.getElementById("prj-index").onclick = function () {
-  window.location.href = '/projects.html';
+  window.location.href = 'projects.html';
 };
 
 document.getElementById("exp-index").onclick = function () {
-  window.location.href = '/experiments.html';
+  window.location.href = 'experiments.html';
 };
 
 // Load Three.js and GLTFLoader
