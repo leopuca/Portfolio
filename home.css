@@ -257,6 +257,7 @@ a.about {
 
   .intro {
     width: 100%;
+    min-width: auto;
   }
 
   .section-container {
