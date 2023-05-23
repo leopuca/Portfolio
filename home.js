@@ -71,7 +71,7 @@ const mat1 = new CANNON.Material('mat1');
 //------------------------------arrow 01--------------------------------//
 let arrowLoaded = false
 const gltfLoader = new GLTFLoader();
-gltfLoader.load('./Media/model1.glb', function (glb) {
+gltfLoader.load('./media/model1.glb', function (glb) {
   model = glb.scene;
   model.position.set(0,0,0);
   scene.add(model);
@@ -129,7 +129,7 @@ world.addBody(body); // Add body to world
 //------------------------------pointer--------------------------------//
 let pointerLoaded = false
 const gltfLoader2 = new GLTFLoader();
-gltfLoader2.load('./Media/model2.glb', function (glb) {
+gltfLoader2.load('./media/model2.glb', function (glb) {
   model2 = glb.scene;
   model2.position.set(0,0,0);
   scene.add(model2);
@@ -201,7 +201,7 @@ world.addBody(body2); // Add body to world
 //------------------------------arrow 02--------------------------------//
 let arrow2Loaded = false
 const gltfLoader3 = new GLTFLoader();
-gltfLoader3.load('./Media/model1.glb', function (glb) {
+gltfLoader3.load('./media/model1.glb', function (glb) {
   model3 = glb.scene;
   model3.position.set(0,0,0);
   scene.add(model3);
