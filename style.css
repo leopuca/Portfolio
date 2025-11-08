@@ -57,6 +57,11 @@ a:hover {
   text-decoration: underline;
 }
 
+.underline-viz {
+  text-decoration: underline;
+  font-family: SuisseIntl; !important
+}
+
 .project-title {
   font-family: SuisseIntl;
   font-size: 18px;
