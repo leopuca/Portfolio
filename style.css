@@ -269,6 +269,10 @@ main {
     justify-content: space-between;
   }
 
+  .half-dx {
+  width: 100%;
+}
+
   #about-mobile {
     font-family: SuisseIntlMono;
     font-size: 13px;
